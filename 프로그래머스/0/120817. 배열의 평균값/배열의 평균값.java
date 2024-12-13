@@ -1,15 +1,10 @@
 class Solution {
     public double solution(int[] numbers) {
         double answer = 0;
-        int sum = 0;
-        int i;
-        
-        for (i = 0; i < numbers.length; i++){
-            sum += numbers[i];
+        for(int i=0;i<numbers.length;i++){
+            answer+=numbers[i];
         }
-        
-        answer = (double) sum / numbers.length;
-        
+        answer/=numbers.length;
         return answer;
     }
 }
